@@ -96,6 +96,11 @@ public final class TutoShowcase {
         return this;
     }
 
+    public TutoShowcase setContentView(View child) {
+        container.addView(child, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        return this;
+    }
+
     public void dismiss() {
         ViewCompat.animate(container)
                 .alpha(0f)
